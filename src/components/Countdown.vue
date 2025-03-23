@@ -19,7 +19,7 @@ function updateCountdown() {
     const duration = moment.duration(christmas.diff(now.value));
     if(duration.asSeconds() > 0){
       countdownParts.value = {
-        days: duration.days(),
+        days: Math.floor(duration.asDays()),
         hours: duration.hours(),
         minutes: duration.minutes(),
         seconds: duration.seconds()
@@ -27,9 +27,8 @@ function updateCountdown() {
     }else{
       mensagemNatal.value = "🎄🎅Feliz Natal!!🎅🎄";
     }
-    
-
 }
+
 
 
 onMounted(() => {
