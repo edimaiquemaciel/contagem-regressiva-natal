@@ -5,7 +5,7 @@ import moment from 'moment';
 import NumberFlow  from "@number-flow/vue";
 
 const now = ref(moment());
-const christmas = moment('December 25, 2024, 00:00:00', 'MMMM DD, YYYY, HH:mm:ss');
+const christmas = moment('December 25, 2025, 00:00:00', 'MMMM DD, YYYY, HH:mm:ss');
 const mensagemNatal = ref('');
 
 const countdownParts = ref({
